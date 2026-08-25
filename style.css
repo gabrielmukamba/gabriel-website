@@ -26,3 +26,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    front-size:0.9em;
+    color:#666;
+}    
