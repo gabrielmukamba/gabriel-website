@@ -96,3 +96,32 @@ footer {
     margin-top: 0;
     color: #1F3864;
 }
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
