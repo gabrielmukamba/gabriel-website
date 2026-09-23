@@ -230,3 +230,60 @@ a {
     fill: #ffffff; /* Sets the default icon color to crisp white */
     transition: fill 0.2s ease;
 }
+/* ==========================================================================
+   8. PREMIUM DARK SLATE NAVIGATION BAR BAR
+   ========================================================================== */
+html {
+    scroll-behavior: smooth; /* Glides page beautifully down to sections */
+}
+
+/* Elite dark navigation container layout block */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #0f172a; /* Deep luxury dark slate background matching your sample */
+    padding: 14px 20px;
+    border-radius: 12px;       /* Sleek curved edges matching your project cards */
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.15); /* Premium soft drop shadow */
+    margin-bottom: 40px;       /* Generous separation space from your greeting */
+    flex-wrap: wrap;           /* Prevents breaking layout rows on small screens */
+}
+
+/* Upgraded interactive navigation item tabs */
+.navbar a {
+    color: #94a3b8;           /* Sophisticated light gray text for elite baseline contrast */
+    font-size: 1.1rem;        /* Enhanced sizing for crisp structural visibility */
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 18px;        /* Comfortable touch targets for mobile and desktops */
+    border-radius: 6px;       /* Subtly matches the parent container styling */
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* Ultra-smooth professional easing transition */
+}
+
+/* Vivid Hover Feedback State */
+.navbar a:hover {
+    color: #ffffff;           /* Snap transitions text to absolute crisp white */
+    background-color: #1e3a8a; /* Illuminates back tab with your engineering theme royal blue */
+}
+
+/* Active Click Feedback State (When a user presses down on the link) */
+.navbar a:active {
+    transform: scale(0.95);    /* Physical button compression click feel */
+    background-color: #1d4ed8; /* Deepens the theme blue color momentarily */
+}
+
+/* Adaptive mobile layout adjustments */
+@media (max-width: 600px) {
+    .navbar {
+        gap: 8px;
+        padding: 10px;
+    }
+    .navbar a {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+        flex-grow: 1;         /* Uniform structural filling across small screens */
+        text-align: center;
+    }
+}
