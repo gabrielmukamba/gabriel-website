@@ -153,20 +153,39 @@ a {
     background-color: #1d4ed8;
 }
 
-/* Contact Links Configuration */
-.contact-links a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 600;
-    margin-right: 15px;
+/* ==========================================================================
+   6. DYNAMIC CIRCULAR SOCIAL NAVIGATION LAYOUT
+   ========================================================================== */
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
 
-.contact-links a:hover {
-    text-decoration: underline;
+.social-container a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: #4a4d52; /* Dark slate gray base matching image UI */
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-container a:hover {
+    background-color: #1e3a8a; /* Changes cleanly to your main layout blue profile color on hover */
+    transform: translateY(-3px); /* Subtle shift upwards */
 }
 
 /* ==========================================================================
-   6. MOBILE RESPONSIVENESS OVERRIDES (EXACT ALIGNMENT MATCH)
+   7. MOBILE RESPONSIVENESS OVERRIDES (EXACT ALIGNMENT MATCH)
    ========================================================================== */
 @media (max-width: 600px) {
     body {
@@ -203,4 +222,11 @@ a {
         width: 100%;
         max-width: 200px;
     }
+}
+/* Styling the inline SVGs inside our social containers */
+.social-container a svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff; /* Sets the default icon color to crisp white */
+    transition: fill 0.2s ease;
 }
