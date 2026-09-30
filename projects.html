@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Gabriel Mukamba</title>
+<meta name="description" content="Projects built by Gabriel Mukamba: a calculator app, to-do list app, VERTEX corporate website, password generator, AI engineering translator, and a civil engineering concrete calculator.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a class="brand" href="index.html">Gabriel Mukamba</a>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="english.html">English Learning</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="kicker">Projects</div>
+    <h1>What I've built</h1>
+    <p class="lead">Each project below includes what it does, why I built it, and how it works.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <div class="project">
+      <h3>CivilTech Concrete Calculator</h3>
+      <div class="meta"><span>Civil Engineering</span><span>HTML/CSS/JS</span></div>
+      <h4>The problem</h4>
+      <p>On a construction site, working out how much sand, gravel, and cement a job needs is normally done by hand, using mix ratios and volume calculations. A small error in that math can mean ordering the wrong quantity of material, which costs time and money.</p>
+      <h4>What it does</h4>
+      <p>You enter the volume of concrete you need and your target mix ratio. The calculator works out the exact quantities of sand, gravel, and cement required to meet that volume and the loading limits the mix is meant to satisfy.</p>
+      <h4>How it works</h4>
+      <p>It takes your inputs, applies the standard volume-ratio formulas used in concrete mix design, and returns each material quantity. Everything runs in the browser — no server needed.</p>
+      <h4>Use case</h4>
+      <p>A student or small contractor estimating materials for a slab or footing before ordering supplies.</p>
+
+      <div class="link">
+        <a href="https://github.io" target="_blank" rel="noopener">Live Demo</a>
+        <a href="https://github.com" target="_blank" rel="noopener">Source Code</a>
+      </div>
+      <div style="margin-top: 18px;">
+        <a href="./static/concrete-calculator.apk" class="download-btn" download>Download Native Android App (.APK)</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>AI Engineering Translation App</h3>
+      <div class="meta"><span>Full-Stack</span><span>Python / Flask</span><span>Gemini API</span></div>
+      <h4>The problem</h4>
+      <p>Technical and industrial documentation is often written in dense, field-specific language that's hard to translate accurately with general-purpose tools.</p>
+      <h4>What it does</h4>
+      <p>It translates heavy, niche industrial documentation in near real time, aiming for translation speeds under two seconds per request.</p>
+      <h4>How it works</h4>
+      <p>A Flask backend receives the document text and passes it through a Google Gemini 3.6 Flash API pipeline for translation, then returns the result to a responsive web interface. The backend is hosted on Render's cloud server architecture, and I also built a standalone wrapper for mobile distribution.</p>
+      <h4>Use case</h4>
+      <p>An engineer needing a fast, field-specific translation of a technical manual or spec sheet.</p>
+
+      <div class="link">
+        <a href="https://onrender.com" target="_blank" rel="noopener">Live Demo</a>
+        <a href="https://github.com" target="_blank" rel="noopener">Source Code</a>
+      </div>
+      <div style="margin-top: 15px;">
+        <a href="./static/engineering-ai-translator.apk" class="download-btn" download>Download Native Android App (.APK)</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Calculate App</h3>
+      <div class="meta"><span>HTML/CSS/JS</span></div>
+      <h4>What it does</h4>
+      <p>A functional calculator for everyday arithmetic, built natively without any external libraries.</p>
+      <h4>Why I built it</h4>
+      <p>As a foundational exercise in handling user input, managing state in JavaScript, and building a clean, responsive UI grid from scratch.</p>
+      <h4>How it works</h4>
+      <p>Button presses update a running expression string, which is evaluated and displayed live, supporting both basic arithmetic and a clear/reset function.</p>
+
+      <div class="link">
+        <a href="https://gabrielmukamba.github.io/calculator-app/" target="_blank" rel="noopener">Live Demo</a>
+        <a href="https://github.com/gabrielmukamba/calculator-app" target="_blank" rel="noopener">Source Code</a>
+      </div>
+      <div style="margin-top: 18px;">
+        <a href="./static/engineering-calculator-app.apk" class="download-btn" download>Download Native Android App (.APK)</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>To-Do List App</h3>
+      <div class="meta"><span>JavaScript</span></div>
+      <h4>What it does</h4>
+      <p>A task management tool where you can add, track, and remove tasks instantly, with no page reloads.</p>
+      <h4>Why I built it</h4>
+      <p>To practice JavaScript's event delegation pattern — handling clicks on dynamically created elements — and DOM manipulation without a framework.</p>
+      <h4>How it works</h4>
+      <p>New tasks are inserted into the page as DOM elements on the fly; a single event listener on the parent list handles add, complete, and delete actions for every task, even ones created after the page loaded.</p>
+
+      <div class="link">
+        <a href="https://gabrielmukamba.github.io/todo-list/" target="_blank" rel="noopener">Live Demo</a>
+        <a href="https://github.com/gabrielmukamba/todo-list" target="_blank" rel="noopener">Source Code</a>
+      </div>
+      <div style="margin-top: 18px;">
+        <a href="./static/todo-app.apk" class="download-btn" download>Download Native Android App (.APK)</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>VERTEX Corporate Website</h3>
+      <div class="meta"><span>HTML/CSS/JS</span><span>Practice Project</span></div>
+      <h4>What it does</h4>
+      <p>A fictional corporate business website, built as a practice project rather than for a real client.</p>
+      <h4>Why I built it</h4>
+      <p>To practice professional layout, multi-section navigation, and responsive design aimed at a business audience, separate from my personal portfolio.</p>
+
+      <div class="link">
+        <a href="https://gabrielmukamba.github.io/vertex-corporate-website/" target="_blank" rel="noopener">Live Demo</a>
+        <a href="https://github.com/gabrielmukamba/vertex-corporate-website" target="_blank" rel="noopener">Source Code</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Password Generator</h3>
+      <div class="meta"><span>Python</span></div>
+      <h4>What it does</h4>
+      <p>Generates strong, randomized passwords based on the length, character types, and symbol density you choose.</p>
+      <h4>How it works</h4>
+      <p>Uses Python's standard cryptographic-strength character libraries to build a randomized password matching your selected criteria.</p>
+
+      <div class="link">
+        <a href="https://github.com/gabrielmukamba/password-generator" target="_blank" rel="noopener">GitHub Repo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Gabriel Mukamba. All rights reserved.</span>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
