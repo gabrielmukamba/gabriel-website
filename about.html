@@ -4,17 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Gabriel Mukamba</title>
-<meta name="description" content="About Gabriel Mukamba — civil engineering education, technical skills, current learning, and goals.">
+<meta name="description" content="About Gabriel Mukamba - civil engineering education, technical skills, current learning, and goals.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gabriel Mukamba">
+<meta property="og:title" content="About | Gabriel Mukamba">
+<meta property="og:description" content="About Gabriel Mukamba - civil engineering education, technical skills, current learning, and goals.">
+<meta property="og:url" content="https://gabrielmukamba.github.io/gabriel-website/about.html">
+<meta property="og:image" content="https://gabrielmukamba.github.io/gabriel-website/images/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About | Gabriel Mukamba">
+<meta name="twitter:description" content="About Gabriel Mukamba - civil engineering education, technical skills, current learning, and goals.">
+<meta name="twitter:image" content="https://gabrielmukamba.github.io/gabriel-website/images/share.jpg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header class="site-header">
   <nav class="navbar">
-    <a class="brand" href="index.html">Gabriel Mukamba</a>
-    <ul class="links">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Gabriel Mukamba logo" class="brand-logo" onerror="this.style.display='none'">
+      <span>Gabriel Mukamba</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="links" id="navLinks">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="about.html" class='active'>About</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="english.html">English Learning</a></li>
@@ -23,35 +42,52 @@
   </nav>
 </header>
 
-<section class="page-hero">
+<section class="page-banner" style="background-image: linear-gradient(to bottom, rgba(13,27,42,0.72), rgba(13,27,42,0.92)), url('images/photo-2.jpg');">
   <div class="wrap">
-    <div class="kicker">About</div>
+    <span class="kicker">About</span>
     <h1>My background and goals</h1>
     <p class="lead">Civil engineering, self-taught programming, and a few languages along the way.</p>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <h2>Education &amp; background</h2>
+<section class="section-alt">
+  <div class="wrap prose">
+    <div class="about-card">
+      <h2>Education &amp; background</h2>
     <p>I am a Civil Engineering student at the International University of East Africa, in Kampala, Uganda. Before that, I studied Automobile Engineering starting in 2015, building a foundation in vehicle maintenance, diagnostics, and mechanical repair, and earned my high school diploma in 2023.</p>
-    <p>In 2024, I relocated to Kampala to focus on advanced English communication and professional development, believing that clear communication is one of the most powerful tools for leadership and international collaboration. Alongside my engineering studies, I taught myself web development and programming — starting with HTML and CSS, then moving into JavaScript and Python.</p>
-
-    <h2>What I'm currently learning</h2>
-    <p>I'm deepening my understanding of JavaScript logic and structures, exploring Python for data and automation tasks, and learning how civil engineering principles — load calculations, material ratios, structural limits — can be turned into simple, usable software tools. I'm also continuing to study C++ fundamentals.</p>
-
-    <h2>My goals</h2>
-    <p>My long-term goal is to become someone who can move comfortably between construction sites and codebases — an engineer who builds physical structures and the software tools that support that work. I also want to keep growing as an English communication professional and educator, since teaching English has shown me how much I enjoy helping other people build skills from the ground up, the same way I've had to build mine.</p>
-    <p>I'm trilingual — fluent in English, French, and Swahili — and I see that as an asset for working across borders, whether in engineering, software, or teaching.</p>
+    <p>In 2024, I relocated to Kampala to focus on advanced English communication and professional development, believing that clear communication is one of the most powerful tools for leadership and international collaboration. Alongside my engineering studies, I taught myself web development and programming, starting with HTML and CSS, then moving into JavaScript and Python.</p>
+    </div>
+    <div class="about-card">
+      <h2>What I'm currently learning</h2>
+    <p>I'm deepening my understanding of JavaScript logic and structures, exploring Python for data and automation tasks, and learning how civil engineering principles (load calculations, material ratios, structural limits) can be turned into simple, usable software tools. I'm also continuing to study C++ fundamentals.</p>
+    </div>
+    <div class="about-card">
+      <h2>My goals</h2>
+    <p>My long-term goal is to become someone who can move comfortably between construction sites and codebases: an engineer who builds physical structures and the software tools that support that work. I also want to keep growing as an English communication professional and educator, since teaching English has shown me how much I enjoy helping other people build skills from the ground up, the same way I've had to build mine.</p>
+    <p>I'm trilingual, fluent in English, French, and Swahili, and I see that as an asset for working across borders, whether in engineering, software, or teaching.</p>
+    </div>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>&copy; 2026 Gabriel Mukamba. All rights reserved.</span>
-    <a href="privacy.html">Privacy Policy</a>
+    <div class="footer-top">
+      <strong>Gabriel Mukamba</strong>
+      <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="english.html">English Learning</a>
+      <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Gabriel Mukamba. All rights reserved.</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
   </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

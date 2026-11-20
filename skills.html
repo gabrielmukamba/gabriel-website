@@ -5,17 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Skills | Gabriel Mukamba</title>
 <meta name="description" content="Gabriel Mukamba's technical, engineering, and language skills.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gabriel Mukamba">
+<meta property="og:title" content="Skills | Gabriel Mukamba">
+<meta property="og:description" content="Gabriel Mukamba's technical, engineering, and language skills.">
+<meta property="og:url" content="https://gabrielmukamba.github.io/gabriel-website/skills.html">
+<meta property="og:image" content="https://gabrielmukamba.github.io/gabriel-website/images/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Skills | Gabriel Mukamba">
+<meta name="twitter:description" content="Gabriel Mukamba's technical, engineering, and language skills.">
+<meta name="twitter:image" content="https://gabrielmukamba.github.io/gabriel-website/images/share.jpg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header class="site-header">
   <nav class="navbar">
-    <a class="brand" href="index.html">Gabriel Mukamba</a>
-    <ul class="links">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Gabriel Mukamba logo" class="brand-logo" onerror="this.style.display='none'">
+      <span>Gabriel Mukamba</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="skills.html" class="active">Skills</a></li>
+      <li><a href="skills.html" class='active'>Skills</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="english.html">English Learning</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -23,45 +42,62 @@
   </nav>
 </header>
 
-<section class="page-hero">
+<section class="page-banner" style="background-image: linear-gradient(to bottom, rgba(13,27,42,0.72), rgba(13,27,42,0.92)), url('images/photo-3.jpg');">
   <div class="wrap">
-    <div class="kicker">Skills</div>
+    <span class="kicker">Skills</span>
     <h1>What I work with</h1>
     <p class="lead">A mix of programming, civil and automobile engineering, and language skills.</p>
   </div>
 </section>
 
-<section>
+<section class="section-alt">
   <div class="wrap">
     <div class="skill-group">
       <h3>Programming &amp; Web Development</h3>
-      <div class="skill-row"><span class="name">Python</span><span class="desc">Used for automation scripts, the AI translation backend, and general logic.</span></div>
-      <div class="skill-row"><span class="name">HTML5 &amp; CSS3</span><span class="desc">Structure and styling for every site and app I've built, including this one.</span></div>
-      <div class="skill-row"><span class="name">JavaScript</span><span class="desc">Interactivity for tools like the calculator and to-do list apps.</span></div>
-      <div class="skill-row"><span class="name">Git &amp; GitHub</span><span class="desc">Version control and hosting for all my projects and this portfolio.</span></div>
+      <div class="skill-grid">
+        <div class="skill"><strong>Python</strong><span>Used for automation scripts, the AI translation backend, and general logic.</span></div>
+        <div class="skill"><strong>HTML5 &amp; CSS3</strong><span>Structure and styling for every site and app I've built, including this one.</span></div>
+        <div class="skill"><strong>JavaScript</strong><span>Interactivity for tools like the calculator and to-do list apps.</span></div>
+        <div class="skill"><strong>Git &amp; GitHub</strong><span>Version control and hosting for all my projects and this portfolio.</span></div>
+      </div>
     </div>
-
-    <div class="skill-group">
+    <div class="skill-group eng">
       <h3>Engineering</h3>
-      <div class="skill-row"><span class="name">Civil Engineering / AutoCAD</span><span class="desc">Coursework covering structural design and material calculations.</span></div>
-      <div class="skill-row"><span class="name">Automotive Engineering</span><span class="desc">Vehicle maintenance, diagnostics, and mechanical repair, studied since 2015.</span></div>
+      <div class="skill-grid">
+        <div class="skill"><strong>Civil Engineering / AutoCAD</strong><span>Coursework covering structural design and material calculations.</span></div>
+        <div class="skill"><strong>Automotive Engineering</strong><span>Vehicle maintenance, diagnostics, and mechanical repair, studied since 2015.</span></div>
+      </div>
     </div>
-
-    <div class="skill-group">
+    <div class="skill-group lang">
       <h3>Languages</h3>
-      <div class="skill-row"><span class="name">English</span><span class="desc">Professional communication; I also teach this to adult beginners.</span></div>
-      <div class="skill-row"><span class="name">French</span><span class="desc">Native fluency.</span></div>
-      <div class="skill-row"><span class="name">Swahili</span><span class="desc">Native fluency.</span></div>
+      <div class="skill-grid">
+        <div class="skill"><strong>English</strong><span>Professional communication; I also teach this to adult beginners.</span></div>
+        <div class="skill"><strong>French</strong><span>Native fluency.</span></div>
+        <div class="skill"><strong>Swahili</strong><span>Native fluency.</span></div>
+      </div>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>&copy; 2026 Gabriel Mukamba. All rights reserved.</span>
-    <a href="privacy.html">Privacy Policy</a>
+    <div class="footer-top">
+      <strong>Gabriel Mukamba</strong>
+      <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="english.html">English Learning</a>
+      <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Gabriel Mukamba. All rights reserved.</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
   </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -3,17 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gabriel Mukamba | Civil Engineering Student &amp; Web Developer</title>
-<meta name="description" content="Gabriel Mukamba — civil engineering student, web developer, and English communicator. Portfolio, projects, and English learning resources.">
+<title>Gabriel Mukamba | Civil Engineering Student & Web Developer</title>
+<meta name="description" content="Gabriel Mukamba - civil engineering student and web developer in Kampala, Uganda. Engineering tools, web projects and English learning resources.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gabriel Mukamba">
+<meta property="og:title" content="Gabriel Mukamba | Civil Engineering Student & Web Developer">
+<meta property="og:description" content="Gabriel Mukamba - civil engineering student and web developer in Kampala, Uganda. Engineering tools, web projects and English learning resources.">
+<meta property="og:url" content="https://gabrielmukamba.github.io/gabriel-website/">
+<meta property="og:image" content="https://gabrielmukamba.github.io/gabriel-website/images/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gabriel Mukamba | Civil Engineering Student & Web Developer">
+<meta name="twitter:description" content="Gabriel Mukamba - civil engineering student and web developer in Kampala, Uganda. Engineering tools, web projects and English learning resources.">
+<meta name="twitter:image" content="https://gabrielmukamba.github.io/gabriel-website/images/share.jpg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header class="site-header">
   <nav class="navbar">
-    <a class="brand" href="index.html">Gabriel Mukamba</a>
-    <ul class="links">
-      <li><a href="index.html" class="active">Home</a></li>
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Gabriel Mukamba logo" class="brand-logo" onerror="this.style.display='none'">
+      <span>Gabriel Mukamba</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="links" id="navLinks">
+      <li><a href="index.html" class='active'>Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="projects.html">Projects</a></li>
@@ -23,59 +42,134 @@
   </nav>
 </header>
 
-<section class="home-hero">
-  <div class="wrap">
+<section class="hero">
+  <div class="wrap hero-grid">
     <div>
-      <div class="kicker">Portfolio</div>
+      <span class="kicker">Civil Engineering &bull; Web Development</span>
       <h1>Gabriel Mukamba</h1>
       <p class="role">Civil Engineering Student &amp; Web Developer</p>
-      <p class="lead">I build practical software tools while training as a civil engineer — bridging construction, code, and communication. Based in Kampala, Uganda, originally from the Democratic Republic of the Congo.</p>
+      <p class="intro">I build practical software tools while training as a civil engineer, bridging construction, code, and communication. Based in Kampala, Uganda, originally from the Democratic Republic of the Congo.</p>
+      <div class="btn-row">
+        <a href="projects.html" class="btn btn-primary">View my projects</a>
+        <a href="contact.html" class="btn btn-ghost">Contact me</a>
+      </div>
     </div>
-    <div class="photo-frame">
-      <img src="photo.jpg" alt="Gabriel Mukamba">
+    <div>
+      <div class="photo-carousel" id="photoCarousel">
+        <div class="slide"><img src="images/photo.jpg" alt="Gabriel Mukamba portrait 1"></div>
+        <div class="slide"><img src="images/photo-2.jpg" alt="Gabriel Mukamba portrait 2"></div>
+        <div class="slide"><img src="images/photo-3.jpg" alt="Gabriel Mukamba portrait 3"></div>
+      </div>
+      <div class="carousel-dots" id="carouselDots">
+        <button class="dot active" aria-label="Photo 1"></button>
+        <button class="dot" aria-label="Photo 2"></button>
+        <button class="dot" aria-label="Photo 3"></button>
+      </div>
+      <p class="carousel-hint">Swipe for another photo</p>
     </div>
   </div>
 </section>
 
-<section>
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><strong>3</strong><span>Languages spoken</span></div>
+    <div class="stat"><strong>6</strong><span>Projects built</span></div>
+    <div class="stat"><strong>2015</strong><span>Engineering studies began</span></div>
+    <div class="stat"><strong>Kampala</strong><span>Based in Uganda</span></div>
+  </div>
+</section>
+
+<section class="section">
   <div class="wrap">
-    <h2>What you'll find here</h2>
-    <p>This site covers my background, technical skills, the projects I've built, and the English lessons I teach. Use the links below or the navigation bar above to explore.</p>
-    <div class="site-map">
-      <a href="about.html">
-        <div class="map-title">About Me</div>
-        <div class="map-desc">My background, education, and what I'm currently learning.</div>
+    <div class="section-head">
+      <span class="kicker">Featured Websites</span>
+      <h2>My live platforms</h2>
+      <p>Three websites I designed and built, each with its own purpose.</p>
+    </div>
+    <div class="card-grid">
+      <a class="card feature" href="https://gabrielmukamba.github.io/gabriel-model-portfolio/" target="_blank" rel="noopener">
+        <span class="tag">Modeling Portfolio</span>
+        <h3>Gabriel Mukamba | Fashion Model</h3>
+        <p>Editorial and runway portfolio with a digital comp card, 24-photo lookbook, runway reels and a direct booking form.</p>
+        <span class="go">Visit website &rarr;</span>
       </a>
-      <a href="skills.html">
-        <div class="map-title">Skills</div>
-        <div class="map-desc">Programming, engineering, and language skills, explained.</div>
+      <a class="card feature" href="https://gabrielmukamba.github.io/iuea-connect/" target="_blank" rel="noopener">
+        <span class="tag">Campus Platform</span>
+        <h3>IUEA Connect</h3>
+        <p>One Campus, One Community. A student platform connecting the IUEA community through information, innovation and collaboration.</p>
+        <span class="go">Visit website &rarr;</span>
       </a>
-      <a href="projects.html">
-        <div class="map-title">Projects</div>
-        <div class="map-desc">Apps and tools I've built, with how and why I built them.</div>
+      <a class="card feature" href="https://gabrielmukamba.github.io/iuea-equal/" target="_blank" rel="noopener">
+        <span class="tag">Student Initiative</span>
+        <h3>IUEA EQUAL</h3>
+        <p>A student initiative website for the International University of East Africa community, built as a multi-page site.</p>
+        <span class="go">Visit website &rarr;</span>
       </a>
-      <a href="english.html">
-        <div class="map-title">English Learning</div>
-        <div class="map-desc">Original lessons from my Learning English with Gabriel Mukamba program.</div>
-      </a>
-      <a href="https://gabrielmukamba.github.io/gabriel-gallery/" target="_blank" rel="noopener">
-        <div class="map-title">Photo Gallery</div>
-        <div class="map-desc">A gallery of photos, separate from this portfolio.</div>
-      </a>
-      <a href="contact.html">
-        <div class="map-title">Contact &amp; Links</div>
-        <div class="map-desc">How to reach me, and links to all my official profiles.</div>
-      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Engineering Tools</span>
+      <h2>Where civil engineering meets code</h2>
+      <p>Software that solves real construction and technical problems.</p>
+    </div>
+    <div class="card-grid two">
+      <div class="card">
+        <span class="tag">Civil Engineering &bull; HTML/CSS/JS</span>
+        <h3>CivilTech Concrete Calculator</h3>
+        <p>Calculates the exact sand, gravel and cement needed for a given concrete volume and mix ratio, so quantities are right before you order.</p>
+        <a class="go" href="https://gabrielmukamba.github.io/civiltech-structural-material-concrete-calculator/" target="_blank" rel="noopener">Open the calculator &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="tag">Full-Stack &bull; Python / Flask</span>
+        <h3>AI Engineering Translation App</h3>
+        <p>Translates heavy industrial and technical documentation in near real time, using a Flask backend and the Gemini API.</p>
+        <a class="go" href="https://engineering-ai-translator.onrender.com" target="_blank" rel="noopener">Open the translator &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Explore</span>
+      <h2>What you'll find here</h2>
+      <p>My background, technical skills, projects and the English lessons I teach.</p>
+    </div>
+    <div class="card-grid">
+      <a class="card" href="about.html"><h3>About Me</h3><p>My background, education, and what I'm currently learning.</p><span class="go">Read more &rarr;</span></a>
+      <a class="card" href="skills.html"><h3>Skills</h3><p>Programming, engineering, and language skills, explained.</p><span class="go">See skills &rarr;</span></a>
+      <a class="card" href="projects.html"><h3>Projects</h3><p>Apps and tools I've built, with how and why I built them.</p><span class="go">See projects &rarr;</span></a>
+      <a class="card" href="english.html"><h3>English Learning</h3><p>Original lessons from my Learning English with Gabriel Mukamba program.</p><span class="go">Start learning &rarr;</span></a>
+      <a class="card" href="https://gabrielmukamba.github.io/gabriel-gallery/" target="_blank" rel="noopener"><h3>Photo Gallery</h3><p>A gallery of photos, separate from this portfolio.</p><span class="go">Open gallery &rarr;</span></a>
+      <a class="card" href="contact.html"><h3>Contact &amp; Links</h3><p>How to reach me, and links to all my official profiles.</p><span class="go">Get in touch &rarr;</span></a>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>&copy; 2026 Gabriel Mukamba. All rights reserved.</span>
-    <a href="privacy.html">Privacy Policy</a>
+    <div class="footer-top">
+      <strong>Gabriel Mukamba</strong>
+      <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="english.html">English Learning</a>
+      <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Gabriel Mukamba. All rights reserved.</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
   </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -4,152 +4,198 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects | Gabriel Mukamba</title>
-<meta name="description" content="Projects built by Gabriel Mukamba: a calculator app, to-do list app, VERTEX corporate website, password generator, AI engineering translator, and a civil engineering concrete calculator.">
+<meta name="description" content="Projects built by Gabriel Mukamba: live websites, a concrete calculator, AI engineering translator, calculator app, to-do list, VERTEX website and a password generator.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gabriel Mukamba">
+<meta property="og:title" content="Projects | Gabriel Mukamba">
+<meta property="og:description" content="Projects built by Gabriel Mukamba: live websites, a concrete calculator, AI engineering translator, calculator app, to-do list, VERTEX website and a password generator.">
+<meta property="og:url" content="https://gabrielmukamba.github.io/gabriel-website/projects.html">
+<meta property="og:image" content="https://gabrielmukamba.github.io/gabriel-website/images/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects | Gabriel Mukamba">
+<meta name="twitter:description" content="Projects built by Gabriel Mukamba: live websites, a concrete calculator, AI engineering translator, calculator app, to-do list, VERTEX website and a password generator.">
+<meta name="twitter:image" content="https://gabrielmukamba.github.io/gabriel-website/images/share.jpg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header class="site-header">
   <nav class="navbar">
-    <a class="brand" href="index.html">Gabriel Mukamba</a>
-    <ul class="links">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Gabriel Mukamba logo" class="brand-logo" onerror="this.style.display='none'">
+      <span>Gabriel Mukamba</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="projects.html" class='active'>Projects</a></li>
       <li><a href="english.html">English Learning</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="page-hero">
+<section class="page-banner" style="background-image: linear-gradient(to bottom, rgba(13,27,42,0.72), rgba(13,27,42,0.92)), url('images/photo-2.jpg');">
   <div class="wrap">
-    <div class="kicker">Projects</div>
+    <span class="kicker">Projects</span>
     <h1>What I've built</h1>
-    <p class="lead">Each project below includes what it does, why I built it, and how it works.</p>
+    <p class="lead">Live websites and engineering tools, each with what it does, why I built it, and how it works.</p>
   </div>
 </section>
 
-<section>
+<section class="section">
   <div class="wrap">
-
-    <div class="project">
-      <h3>CivilTech Concrete Calculator</h3>
-      <div class="meta"><span>Civil Engineering</span><span>HTML/CSS/JS</span></div>
-      <h4>The problem</h4>
-      <p>On a construction site, working out how much sand, gravel, and cement a job needs is normally done by hand, using mix ratios and volume calculations. A small error in that math can mean ordering the wrong quantity of material, which costs time and money.</p>
-      <h4>What it does</h4>
-      <p>You enter the volume of concrete you need and your target mix ratio. The calculator works out the exact quantities of sand, gravel, and cement required to meet that volume and the loading limits the mix is meant to satisfy.</p>
-      <h4>How it works</h4>
-      <p>It takes your inputs, applies the standard volume-ratio formulas used in concrete mix design, and returns each material quantity. Everything runs in the browser — no server needed.</p>
-      <h4>Use case</h4>
-      <p>A student or small contractor estimating materials for a slab or footing before ordering supplies.</p>
-
-      <div class="link">
-        <a href="https://gabrielmukamba.github.io/civiltech-structural-material-concrete-calculator/" target="_blank" rel="noopener">Live Demo</a>
-        <a href="https://github.com/gabrielmukamba/civiltech-structural-material-concrete-calculator" target="_blank" rel="noopener">Source Code</a>
-      </div>
-      <div style="margin-top: 18px;">
-        <a href="./static/concrete-calculator.apk" class="download-btn" download>Download Native Android App (.APK)</a>
-      </div>
+    <div class="section-head">
+      <span class="kicker">Featured Websites</span>
+      <h2>Live platforms</h2>
+      <p>Three full websites I designed, built and published.</p>
     </div>
-
-    <div class="project">
-      <h3>AI Engineering Translation App</h3>
-      <div class="meta"><span>Full-Stack</span><span>Python / Flask</span><span>Gemini API</span></div>
-      <h4>The problem</h4>
-      <p>Technical and industrial documentation is often written in dense, field-specific language that's hard to translate accurately with general-purpose tools.</p>
-      <h4>What it does</h4>
-      <p>It translates heavy, niche industrial documentation in near real time, aiming for translation speeds under two seconds per request.</p>
-      <h4>How it works</h4>
-      <p>A Flask backend receives the document text and passes it through a Google Gemini 3.6 Flash API pipeline for translation, then returns the result to a responsive web interface. The backend is hosted on Render's cloud server architecture, and I also built a standalone wrapper for mobile distribution.</p>
-      <h4>Use case</h4>
-      <p>An engineer needing a fast, field-specific translation of a technical manual or spec sheet.</p>
-
-      <div class="link">
-        <a href="https://engineering-ai-translator.onrender.com" target="_blank" rel="noopener">Live Demo</a>
-        <a href="https://github.com/gabrielmukamba/engineering-ai-translator" target="_blank" rel="noopener">Source Code</a>
-      </div>
-      <div style="margin-top: 15px;">
-        <a href="./static/engineering-ai-translator.apk" class="download-btn" download>Download Native Android App (.APK)</a>
-      </div>
+    <div class="card-grid">
+      <a class="card feature" href="https://gabrielmukamba.github.io/gabriel-model-portfolio/" target="_blank" rel="noopener">
+        <span class="tag">Modeling Portfolio</span>
+        <h3>Gabriel Mukamba | Fashion Model</h3>
+        <p>Editorial and runway portfolio with a digital comp card, 24-photo lookbook, runway reels and a direct booking form.</p>
+        <span class="go">Visit website &rarr;</span>
+      </a>
+      <a class="card feature" href="https://gabrielmukamba.github.io/iuea-connect/" target="_blank" rel="noopener">
+        <span class="tag">Campus Platform</span>
+        <h3>IUEA Connect</h3>
+        <p>One Campus, One Community. A student platform connecting the IUEA community through information, innovation and collaboration.</p>
+        <span class="go">Visit website &rarr;</span>
+      </a>
+      <a class="card feature" href="https://gabrielmukamba.github.io/iuea-equal/" target="_blank" rel="noopener">
+        <span class="tag">Student Initiative</span>
+        <h3>IUEA EQUAL</h3>
+        <p>A student initiative website for the International University of East Africa community, built as a multi-page site.</p>
+        <span class="go">Visit website &rarr;</span>
+      </a>
     </div>
+  </div>
+</section>
 
-    <div class="project">
-      <h3>Calculate App</h3>
-      <div class="meta"><span>HTML/CSS/JS</span></div>
-      <h4>What it does</h4>
-      <p>A functional calculator for everyday arithmetic, built natively without any external libraries.</p>
-      <h4>Why I built it</h4>
-      <p>As a foundational exercise in handling user input, managing state in JavaScript, and building a clean, responsive UI grid from scratch.</p>
-      <h4>How it works</h4>
-      <p>Button presses update a running expression string, which is evaluated and displayed live, supporting both basic arithmetic and a clear/reset function.</p>
-
-      <div class="link">
-        <a href="https://gabrielmukamba.github.io/calculator-app/" target="_blank" rel="noopener">Live Demo</a>
-        <a href="https://github.com/gabrielmukamba/calculator-app" target="_blank" rel="noopener">Source Code</a>
-      </div>
-      <div style="margin-top: 18px;">
-        <a href="./static/engineering-calculator-app.apk" class="download-btn" download>Download Native Android App (.APK)</a>
-      </div>
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Engineering &amp; Development</span>
+      <h2>Tools and apps</h2>
+      <p>From concrete mix calculations to AI-powered technical translation.</p>
     </div>
-
-    <div class="project">
-      <h3>To-Do List App</h3>
-      <div class="meta"><span>JavaScript</span></div>
-      <h4>What it does</h4>
-      <p>A task management tool where you can add, track, and remove tasks instantly, with no page reloads.</p>
-      <h4>Why I built it</h4>
-      <p>To practice JavaScript's event delegation pattern — handling clicks on dynamically created elements — and DOM manipulation without a framework.</p>
-      <h4>How it works</h4>
-      <p>New tasks are inserted into the page as DOM elements on the fly; a single event listener on the parent list handles add, complete, and delete actions for every task, even ones created after the page loaded.</p>
-
-      <div class="link">
-        <a href="https://gabrielmukamba.github.io/todo-list/" target="_blank" rel="noopener">Live Demo</a>
-        <a href="https://github.com/gabrielmukamba/todo-list" target="_blank" rel="noopener">Source Code</a>
-      </div>
-      <div style="margin-top: 18px;">
-        <a href="./static/todo-app.apk" class="download-btn" download>Download Native Android App (.APK)</a>
-      </div>
+    <article class="project">
+    <h3>CivilTech Concrete Calculator</h3>
+    <div class="tech"><span>Civil Engineering</span><span>HTML/CSS/JS</span></div>
+    <h4>The problem</h4>
+    <p>On a construction site, working out how much sand, gravel, and cement a job needs is normally done by hand, using mix ratios and volume calculations. A small error in that math can mean ordering the wrong quantity of material, which costs time and money.</p>
+    <h4>What it does</h4>
+    <p>You enter the volume of concrete you need and your target mix ratio. The calculator works out the exact quantities of sand, gravel, and cement required to meet that volume and the loading limits the mix is meant to satisfy.</p>
+    <h4>How it works</h4>
+    <p>It takes your inputs, applies the standard volume-ratio formulas used in concrete mix design, and returns each material quantity. Everything runs in the browser, with no server needed.</p>
+    <h4>Use case</h4>
+    <p>A student or small contractor estimating materials for a slab or footing before ordering supplies.</p>
+    <div class="project-links">
+      <a class="btn btn-dark" href="https://gabrielmukamba.github.io/civiltech-structural-material-concrete-calculator/" target="_blank" rel="noopener">Live Demo</a>
+      <a class="btn btn-outline" href="https://github.com/gabrielmukamba/civiltech-structural-material-concrete-calculator" target="_blank" rel="noopener">Source Code</a>
+      <a class="btn btn-outline" href="static/concrete-calculator.apk" download>Download Android App (.APK)</a>
     </div>
-
-    <div class="project">
-      <h3>VERTEX Corporate Website</h3>
-      <div class="meta"><span>HTML/CSS/JS</span><span>Practice Project</span></div>
-      <h4>What it does</h4>
-      <p>A fictional corporate business website, built as a practice project rather than for a real client.</p>
-      <h4>Why I built it</h4>
-      <p>To practice professional layout, multi-section navigation, and responsive design aimed at a business audience, separate from my personal portfolio.</p>
-
-      <div class="link">
-        <a href="https://gabrielmukamba.github.io/vertex-corporate-website/" target="_blank" rel="noopener">Live Demo</a>
-        <a href="https://github.com/gabrielmukamba/vertex-corporate-website" target="_blank" rel="noopener">Source Code</a>
-      </div>
+    </article>
+    <article class="project">
+    <h3>AI Engineering Translation App</h3>
+    <div class="tech"><span>Full-Stack</span><span>Python / Flask</span><span>Gemini API</span></div>
+    <h4>The problem</h4>
+    <p>Technical and industrial documentation is often written in dense, field-specific language that's hard to translate accurately with general-purpose tools.</p>
+    <h4>What it does</h4>
+    <p>It translates heavy, niche industrial documentation in near real time, aiming for translation speeds under two seconds per request.</p>
+    <h4>How it works</h4>
+    <p>A Flask backend receives the document text and passes it through a Google Gemini API pipeline for translation, then returns the result to a responsive web interface. The backend is hosted on Render's cloud server architecture, and I also built a standalone wrapper for mobile distribution.</p>
+    <h4>Use case</h4>
+    <p>An engineer needing a fast, field-specific translation of a technical manual or spec sheet.</p>
+    <div class="project-links">
+      <a class="btn btn-dark" href="https://engineering-ai-translator.onrender.com" target="_blank" rel="noopener">Live Demo</a>
+      <a class="btn btn-outline" href="https://github.com/gabrielmukamba" target="_blank" rel="noopener">Source Code</a>
+      <a class="btn btn-outline" href="static/engineering-ai-translator.apk" download>Download Android App (.APK)</a>
     </div>
-
-    <div class="project">
-      <h3>Password Generator</h3>
-      <div class="meta"><span>Python</span></div>
-      <h4>What it does</h4>
-      <p>Generates strong, randomized passwords based on the length, character types, and symbol density you choose.</p>
-      <h4>How it works</h4>
-      <p>Uses Python's standard cryptographic-strength character libraries to build a randomized password matching your selected criteria.</p>
-
-      <div class="link">
-        <a href="https://github.com/gabrielmukamba/password-generator" target="_blank" rel="noopener">GitHub Repo</a>
-      </div>
+    </article>
+    <article class="project">
+    <h3>Calculate App</h3>
+    <div class="tech"><span>HTML/CSS/JS</span></div>
+    <h4>What it does</h4>
+    <p>A functional calculator for everyday arithmetic, built natively without any external libraries.</p>
+    <h4>Why I built it</h4>
+    <p>As a foundational exercise in handling user input, managing state in JavaScript, and building a clean, responsive UI grid from scratch.</p>
+    <h4>How it works</h4>
+    <p>Button presses update a running expression string, which is evaluated and displayed live, supporting both basic arithmetic and a clear/reset function.</p>
+    <div class="project-links">
+      <a class="btn btn-dark" href="https://gabrielmukamba.github.io/calculator-app/" target="_blank" rel="noopener">Live Demo</a>
+      <a class="btn btn-outline" href="https://github.com/gabrielmukamba/calculator-app" target="_blank" rel="noopener">Source Code</a>
+      <a class="btn btn-outline" href="static/engineering-calculator-app.apk" download>Download Android App (.APK)</a>
     </div>
-
+    </article>
+    <article class="project">
+    <h3>To-Do List App</h3>
+    <div class="tech"><span>JavaScript</span></div>
+    <h4>What it does</h4>
+    <p>A task management tool where you can add, track, and remove tasks instantly, with no page reloads.</p>
+    <h4>Why I built it</h4>
+    <p>To practice JavaScript's event delegation pattern (handling clicks on dynamically created elements) and DOM manipulation without a framework.</p>
+    <h4>How it works</h4>
+    <p>New tasks are inserted into the page as DOM elements on the fly; a single event listener on the parent list handles add, complete, and delete actions for every task, even ones created after the page loaded.</p>
+    <div class="project-links">
+      <a class="btn btn-dark" href="https://gabrielmukamba.github.io/todo-list/" target="_blank" rel="noopener">Live Demo</a>
+      <a class="btn btn-outline" href="https://github.com/gabrielmukamba/todo-list" target="_blank" rel="noopener">Source Code</a>
+      <a class="btn btn-outline" href="static/todo-app.apk" download>Download Android App (.APK)</a>
+    </div>
+    </article>
+    <article class="project">
+    <h3>VERTEX Corporate Website</h3>
+    <div class="tech"><span>HTML/CSS/JS</span><span>Practice Project</span></div>
+    <h4>What it does</h4>
+    <p>A fictional corporate business website, built as a practice project rather than for a real client.</p>
+    <h4>Why I built it</h4>
+    <p>To practice professional layout, multi-section navigation, and responsive design aimed at a business audience, separate from my personal portfolio.</p>
+    <div class="project-links">
+      <a class="btn btn-dark" href="https://gabrielmukamba.github.io/vertex-corporate-website/" target="_blank" rel="noopener">Live Demo</a>
+      <a class="btn btn-outline" href="https://github.com/gabrielmukamba/vertex-corporate-website" target="_blank" rel="noopener">Source Code</a>
+    </div>
+    </article>
+    <article class="project">
+    <h3>Password Generator</h3>
+    <div class="tech"><span>Python</span></div>
+    <h4>What it does</h4>
+    <p>Generates strong, randomized passwords based on the length, character types, and symbol density you choose.</p>
+    <h4>How it works</h4>
+    <p>Uses Python's standard cryptographic-strength character libraries to build a randomized password matching your selected criteria.</p>
+    <div class="project-links">
+      <a class="btn btn-dark" href="https://github.com/gabrielmukamba/password-generator" target="_blank" rel="noopener">GitHub Repo</a>
+    </div>
+    </article>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>&copy; 2026 Gabriel Mukamba. All rights reserved.</span>
-    <a href="privacy.html">Privacy Policy</a>
+    <div class="footer-top">
+      <strong>Gabriel Mukamba</strong>
+      <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="english.html">English Learning</a>
+      <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Gabriel Mukamba. All rights reserved.</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
   </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
